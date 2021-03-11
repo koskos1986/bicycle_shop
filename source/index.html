@@ -1,13 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
+  <title>Проект Акселератора - "Велосипеды"</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preload" href="fonts/OpenSans-Bold.woff" as="font">
+  <link rel="preload" href="fonts/OpenSans-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/OpenSans-Light.woff" as="font">
+  <link rel="preload" href="fonts/OpenSans-Light.woff2" as="font">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff" as="font">
+  <link rel="preload" href="fonts/OpenSans-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/OpenSans-SemiBold.woff" as="font">
+  <link rel="preload" href="fonts/OpenSans-SemiBold.woff2" as="font">
 </head>
-<body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+<body class="page">
+  <header class="page__header header">
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">О нас</li>
+        <li class="nav__item">Виды велосипедов</li>
+        <li class="nav__item">Видео про велосипеды</li>
+        <li class="nav__item">Контакты</li>
+      </ul>
+    </nav>
+    <button class="header__button"></button>
+  </header>
+
+  <main class="page__main main">
+    <section class="lead">
+      <div class="lead__wrapper">
+        <a href="" class="lead__logo">
+          <svg>
+            <use></use>
+          </svg>
+        </a>
+        <button class="btn lead__btn" type="button"></button>
+      </div>
+      <h1>Мы продаем велосипеды</h1>
+      <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
+    </section>
+    <form class="form" action="">
+      <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
+      <label class="form__label" for="">
+        <input type="text">
+      </label>
+      <label class="form__label" for="">
+        <input type="text">
+      </label>
+      <button class="btn button" type="submit">Подобрать велосипед мечты</button>
+    </form>
+    <section class="about-us">
+      <h2>Несколько фактов о нас</h2>
+      <ol class="about-us__list">
+        <li class="about-us__item">Самый широкий выбор велосипедов!</li>
+        <li class="about-us__item">Доставка велосипедов по всей России!</li>
+        <li class="about-us__item">Большой выбор крутых аксессуаров!</li>
+        <li class="about-us__item">Профессиональные консультации!</li>
+      </ol>
+    </section>
+    <section class="bicycles">
+      <h2>Виды велосипедов</h2>
+      <ul class="bicycles__list">
+        <li class="bicycles__item">
+          <div class="bicycles__photo-wrapper">
+            <picture></picture>
+          </div>
+          <p>Дорожный велосипед</p>
+        </li>
+        <li class="bicycles__item">
+          <div class="bicycles__photo-wrapper">
+            <picture></picture>
+          </div>
+          <p>Горный велосипед</p>
+        </li>
+        <li class="bicycles__item">
+          <div class="bicycles__photo-wrapper">
+            <picture></picture>
+          </div>
+          <p>Детский велосипед</p>
+        </li>
+      </ul>
+    </section>
+    <section class="video">
+      <h2>Видео про велосипеды</h2>
+      <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+      <div class="video__wrapper">
+        <button class="btn"></button>
+      </div>
+    </section>
+    <section class="destination">
+      <h2>Как нас найти?</h2>
+      <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
+      <iframe src="" frameborder="0"></iframe>
+    </section>
+  </main>
+
+  <footer class="page__footer footer">
+    <section class="footer__contacts">
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="footer__contacts-wrapper">
+        <svg>
+          <use></use>
+        </svg>
+        <a href="mailto:puteshestviemechta@gmail.ru" class="footer__email">puteshestviemechta@gmail.ru</a>
+      </div>
+      <div class="footer__contacts-wrapper">
+        <svg>
+          <use></use>
+        </svg>
+        <a href="+7(499)-784-684-46" class="footer__phone">+7 (499) -784-684-46</a>
+      </div>
+    </section>
+  </footer>
+  <script src=""></script>
 </body>
 </html>
