@@ -20,10 +20,18 @@
   <header class="page__header header">
     <nav class="nav">
       <ul class="nav__list">
-        <li class="nav__item">О нас</li>
-        <li class="nav__item">Виды велосипедов</li>
-        <li class="nav__item">Видео про велосипеды</li>
-        <li class="nav__item">Контакты</li>
+        <li class="nav__item">
+          <a class="nav__link" href="#about">О нас</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#bicycles">Виды велосипедов</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#video">Видео про велосипеды</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#contacts">Контакты</a>
+        </li>
       </ul>
     </nav>
     <button class="header__button"></button>
@@ -32,7 +40,7 @@
   <main class="page__main main">
     <section class="lead">
       <div class="lead__wrapper">
-        <a href="" class="lead__logo">
+        <a href="#" class="lead__logo">
           <svg>
             <use></use>
           </svg>
@@ -42,17 +50,17 @@
       <h1>Мы продаем велосипеды</h1>
       <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
     </section>
-    <form class="form" action="">
+    <form class="form" action="https://echo.htmlacademy.ru" method="POST">
       <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
       <label class="form__label" for="">
-        <input type="text">
+        <input type="text" required>
       </label>
       <label class="form__label" for="">
-        <input type="text">
+        <input type="tel" required>
       </label>
       <button class="btn button" type="submit">Подобрать велосипед мечты</button>
     </form>
-    <section class="about-us">
+    <section class="about-us" id="about">
       <h2>Несколько фактов о нас</h2>
       <ol class="about-us__list">
         <li class="about-us__item">Самый широкий выбор велосипедов!</li>
@@ -61,7 +69,7 @@
         <li class="about-us__item">Профессиональные консультации!</li>
       </ol>
     </section>
-    <section class="bicycles">
+    <section class="bicycles" id="bicycles">
       <h2>Виды велосипедов</h2>
       <ul class="bicycles__list">
         <li class="bicycles__item">
@@ -84,7 +92,7 @@
         </li>
       </ul>
     </section>
-    <section class="video">
+    <section class="video" id="video">
       <h2>Видео про велосипеды</h2>
       <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
       <div class="video__wrapper">
@@ -99,7 +107,7 @@
   </main>
 
   <footer class="page__footer footer">
-    <section class="footer__contacts">
+    <section class="footer__contacts" id="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       <div class="footer__contacts-wrapper">
         <svg>

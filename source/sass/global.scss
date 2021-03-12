@@ -28,11 +28,10 @@ img {
   height: auto;
 }
 
-.page {
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  min-height: 100%;
-  margin: 0;
+body {
+  @include style-reset;
+
+  width: 100%;
   font-style: normal;
   font-size: $font-size;
   line-height: $line-height;
