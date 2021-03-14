@@ -1,0 +1,18 @@
+.header {
+  position: relative;
+  background-color: transparent;
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.header__button {
+  display: none;
+
+  @include tablet {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}

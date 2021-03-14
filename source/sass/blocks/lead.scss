@@ -1,0 +1,100 @@
+.lead {
+  text-align: left;
+
+  @include tablet {
+    margin-top: 0;
+    background-image: url("../img/bg-main-tablet@1x.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @include retina {
+      background-image: url("../img/bg-main-tablet@2x.jpg");
+    }
+  }
+}
+
+.lead__wrapper {
+  margin-bottom: 28px;
+
+  @include tablet {
+    display: flex;
+    margin-bottom: 84px;
+  }
+
+  @include mobile {
+    margin-bottom: 70px;
+  }
+}
+
+.lead__logo {
+  padding-top: 25px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-left: 21px;
+}
+
+.lead h2 {
+  @include style-reset;
+
+  margin-bottom: 24px;
+  font-size: 46px;
+  font-weight: $bold;
+  line-height: 64px;
+  color: $color-white;
+  letter-spacing: -0.005em;
+
+  @include tablet {
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    font-size: 30px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+  @include mobile {
+    @include padding-mobile;
+  }
+}
+
+.lead p {
+  @include style-reset;
+
+  width: 381px;
+  font-size: 20px;
+  font-weight: $light;
+  line-height: 32px;
+  letter-spacing: -0.005em;
+  color: $color-white;
+  opacity: 0.8;
+
+  @include tablet {
+    margin-right: auto;
+    margin-bottom: 80px;
+    margin-left: auto;
+    font-size: $font-size;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  @include mobile {
+    @include padding-mobile;
+  }
+}
+
+.lead__btn {
+  @include btn-reset;
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: $primary-green;
+  background-image: url("../img/icon-btn-menu.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include tablet {
+    display: block;
+    margin-left: auto;
+  }
+}

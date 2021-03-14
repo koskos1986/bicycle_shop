@@ -13,3 +13,8 @@
   @include style-reset;
   list-style-type: none;
 }
+
+@mixin padding-mobile {
+  padding-right: $padding-mobile;
+  padding-left: $padding-mobile;
+}
