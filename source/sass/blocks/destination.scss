@@ -26,6 +26,37 @@
   width: 66.45%;
   height: 530px;
   margin-bottom: 39px;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include desktop {
+    background-image: url("../img/bg-map-desktop@1x.webp");
+
+    @include retina {
+      background-image: url("../img/bg-map-desktop@2x.webp");
+      background-size: 66.45% auto;
+    }
+  }
+
+  @include tablet {
+    width: 91%;
+    background-image: url("../img/bg-map-tablet@1x.webp");
+
+    @include retina {
+      background-image: url("../img/bg-map-tablet@2x.webp");
+      background-size: 91% auto;
+    }
+  }
+
+  @include tablet {
+    width: 100%;
+    background-image: url("../img/bg-map-mobile@1x.webp");
+
+    @include retina {
+      background-image: url("../img/bg-map-mobile@2x.webp");
+      background-size: 100% auto;
+    }
+  }
 }
 
 .destination__map-wrapper iframe {

@@ -2,12 +2,25 @@
   display: flex;
   justify-content: center;
   margin-bottom: 98px;
+
+  @include tablet {
+    margin-bottom: 53px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    margin-bottom: 51px;
+  }
 }
 
 .footer__email {
   position: relative;
   display: block;
   padding-right: 90px;
+  font-size: 16px;
+  font-weight: $regular;
+  line-height: 22px;
+  color: $color-gray-link;
 
   &::before {
     position: absolute;
@@ -18,5 +31,28 @@
     height: 20px;
     background-image: url("../img/icon-email.svg");
     background-size: cover;
+  }
+
+  @include mobile {
+    margin-bottom: 22px;
+  }
+}
+
+.footer__phone {
+  position: relative;
+  display: block;
+  font-size: 16px;
+  font-weight: $regular;
+  line-height: 32px;
+  color: $color-gray-link;
+
+  &::before {
+    position: absolute;
+    top: 10px;
+    left: -30px;
+    content: "";
+    width: 22px;
+    height: 23px;
+    background-image: url("../img/icon-phone.svg");
   }
 }
