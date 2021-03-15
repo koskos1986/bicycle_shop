@@ -1,0 +1,185 @@
+.bicycles {
+  padding-top: 149px;
+  padding-right: 148px;
+  padding-bottom: 147px;
+  padding-left: 148px;
+  background-color: $color-gray-bg;
+
+  @include tablet {
+    padding-top: 50px;
+    padding-right: 89px;
+    padding-bottom: 20px;
+    padding-left: 89px;
+  }
+
+  @include mobile {
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+  }
+}
+
+.bicycles h2 {
+  @include style-reset;
+  margin-bottom: 61px;
+  font-size: 30px;
+  font-weight: $semi-bold;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  text-align: center;
+  color: $secondary-black;
+
+  @include tablet {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: $semi-bold;
+    line-height: 41px;
+  }
+}
+
+.bicycles__list {
+  @include list-reset;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.bicycles__item {
+  width: 30.3%;
+  margin-right: 4.5%;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--mountain {
+    padding-top: 29px;
+
+    @include tablet {
+      padding-top: 0;
+      margin-right: 0;
+    }
+  }
+
+  @include tablet {
+    width: 45.3%;
+    margin-bottom: 50px;
+  }
+
+  @include mobile {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.bicycles__item img {
+  border-radius: 8px;
+
+  @include tablet {
+    width: 270px;
+    height: 300px;
+  }
+}
+
+.bicycles__photo-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.bicycles__photo-wrapper--touristic {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    top: 156px;
+    left: -60px;
+    z-index: -1;
+
+    border: 27px solid $primary-green;
+    box-sizing: border-box;
+    border-radius: 50%;
+
+    @include tablet {
+      width: 127px;
+      height: 127px;
+      top: 201px;
+      left: -37px;
+      border: 18px solid $primary-green;
+    }
+
+    @include mobile {
+      left: -24px;
+    }
+  }
+}
+
+.bicycles__photo-wrapper--mountain {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    left: -19px;
+    top: -18px;
+    border: 8px solid $primary-green;
+    box-sizing: border-box;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 47px;
+    height: 47px;
+    right: -23px;
+    bottom: -11px;
+    border: 8px solid $primary-green;
+    box-sizing: border-box;
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.bicycles__photo-wrapper--children {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    right: -36px;
+    top: -32px;
+    border: 17px solid $primary-green;
+    box-sizing: border-box;
+    border-radius: 50%;
+
+    @include tablet {
+      width: 68px;
+      height: 68px;
+      top: -20px;
+      right: -25px;
+      border: 13px solid $primary-green;
+    }
+
+    @include mobile {
+      right: -15px;
+    }
+  }
+}
+
+.bicycles p {
+  @include style-reset;
+  font-size: 22px;
+  font-weight: $semi-bold;
+  line-height: $line-height;
+  letter-spacing: -0.5px;
+  text-align: center;
+}

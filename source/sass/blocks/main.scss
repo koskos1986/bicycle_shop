@@ -1,5 +1,6 @@
 .main__wrapper {
   display: flex;
+  justify-content: center;
   padding-top: 318px;
   padding-right: 280px;
   padding-left: 280px;
@@ -8,7 +9,8 @@
   margin-top: -62px;
   background-image: url("../img/bg-main-desktop@1x.jpg");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 
   @include retina {
     background-image: url("../img/bg-main-desktop@2x.jpg");

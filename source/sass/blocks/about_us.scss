@@ -1,4 +1,4 @@
-.about_us {
+.about-us {
   display: flex;
   flex-direction: column;
 
@@ -10,19 +10,20 @@
   @include tablet {
     padding-top: 70px;
     padding-right: 106px;
-    padding-bottom: 70px;
+    padding-bottom: 30px;
     padding-left: 106px;
   }
 
   @include mobile {
     padding-top: 70px;
     padding-right: 15px;
-    padding-bottom: 70px;
+    padding-bottom: 35px;
     padding-left: 15px;
   }
 }
 
-.about_us h2 {
+.about-us h2 {
+  @include style-reset;
   margin-bottom: 50px;
   font-size: 30px;
   font-weight: $semi-bold;
@@ -30,6 +31,16 @@
   letter-spacing: -0.005em;
   text-align: center;
   color: $secondary-black;
+
+  @include tablet {
+    font-size: 24px;
+    line-height: 41px;
+  }
+
+  @include mobile {
+    font-size: 24px;
+    line-height: 41px;
+  }
 }
 
 .about-us__list {
@@ -43,6 +54,7 @@
 
   @include mobile {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -51,9 +63,18 @@
   flex-direction: column;
   align-items: center;
   width: 263px;
+
+  @include tablet {
+    margin-bottom: 40px;
+  }
+
+  @include mobile {
+    margin-bottom: 35px;
+  }
 }
 
 .about-us__item span {
+  margin-bottom: 37px;
   font-size: 28px;
   font-weight: $bold;
   line-height: 38px;
@@ -63,6 +84,8 @@
 }
 
 .about-us__item p {
+  @include style-reset;
+  width: 263px;
   font-size: 22px;
   font-weight: $regular;
   line-height: $line-height;

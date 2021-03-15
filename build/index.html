@@ -65,31 +65,70 @@
     </div>
     <section class="about-us" id="about">
       <h2>Несколько фактов о нас</h2>
-      <ol class="about-us__list">
-        <li class="about-us__item">Самый широкий выбор велосипедов!</li>
-        <li class="about-us__item">Доставка велосипедов по всей России!</li>
-        <li class="about-us__item">Большой выбор крутых аксессуаров!</li>
-        <li class="about-us__item">Профессиональные консультации!</li>
-      </ol>
+      <ul class="about-us__list">
+        <li class="about-us__item">
+          <span>01</span>
+          <p>Самый широкий выбор велосипедов!</p>
+        </li>
+        <li class="about-us__item">
+          <span>02</span>
+          <p>Доставка велосипедов по всей России!</p>
+        </li>
+        <li class="about-us__item">
+          <span>03</span>
+          <p>Большой выбор крутых аксессуаров!</p>
+        </li>
+        <li class="about-us__item">
+          <span>04</span>
+          <p>Профессиональные консультации!</p>
+        </li>
+      </ul>
     </section>
     <section class="bicycles" id="bicycles">
       <h2>Виды велосипедов</h2>
       <ul class="bicycles__list">
         <li class="bicycles__item">
-          <div class="bicycles__photo-wrapper">
-            <picture></picture>
+          <div class="bicycles__photo-wrapper bicycles__photo-wrapper--touristic">
+            <picture>
+              <!-- 1x: 270px; 2x: 540px -->
+            <source media="(max-width: 1023px)" type="image/webp" srcset="img/andreas-haimerl-tablet@1x.webp, img/andreas-haimerl-tablet@2x.webp 2x">
+              <!-- 1x: 342px; 2x: 684px -->
+              <source type="image/webp" srcset="img/andreas-haimerl-desktop@1x.webp, img/andreas-haimerl-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <source media="(max-width: 1023px)" srcset="img/andreas-haimerl-tablet@1x.jpg, img/andreas-haimerl-tablet@2x.jpg 2x">
+              <!-- 1x: 342px; 2x: 684px -->
+              <img width="342" height="503" src="img/andreas-haimerl-desktop@1x.jpg" srcset="img/andreas-haimerl-desktop@2x.jpg 2x" alt="Белый туристический велосипед с корзиной" loading="lazy">
+            </picture>
           </div>
           <p>Дорожный велосипед</p>
         </li>
-        <li class="bicycles__item">
-          <div class="bicycles__photo-wrapper">
-            <picture></picture>
+        <li class="bicycles__item bicycles__item--mountain">
+          <div class="bicycles__photo-wrapper bicycles__photo-wrapper--mountain">
+            <picture>
+              <!-- 1x: 270px; 2x: 540px -->
+            <source media="(max-width: 1023px)" type="image/webp" srcset="img/eberhard-grossgasteiger-tablet@1x.webp, img/eberhard-grossgasteiger-tablet@2x.webp 2x">
+              <!-- 1x: 342px; 2x: 684px -->
+              <source type="image/webp" srcset="img/eberhard-grossgasteiger-desktop@1x.webp, img/eberhard-grossgasteiger-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <source media="(max-width: 1023px)" srcset="img/eberhard-grossgasteiger-tablet@1x.jpg, img/eberhard-grossgasteiger-tablet@2x.jpg 2x">
+              <!-- 1x: 342px; 2x: 684px -->
+              <img width="342" height="566" src="img/eberhard-grossgasteiger-desktop@1x.jpg" srcset="img/eberhard-grossgasteiger-desktop@2x.jpg 2x" alt="Черный горный велосипед" loading="lazy">
+            </picture>
           </div>
           <p>Горный велосипед</p>
         </li>
         <li class="bicycles__item">
-          <div class="bicycles__photo-wrapper">
-            <picture></picture>
+          <div class="bicycles__photo-wrapper bicycles__photo-wrapper--children">
+            <picture>
+              <!-- 1x: 270px; 2x: 540px -->
+            <source media="(max-width: 1023px)" type="image/webp" srcset="img/roger-goh-tablet@1x.webp, img/roger-goh-tablet@2x.webp 2x">
+              <!-- 1x: 342px; 2x: 684px -->
+              <source type="image/webp" srcset="img/roger-goh-desktop@1x.webp, img/roger-goh-desktop@2x.webp 2x">
+              <!-- 1x: 270px; 2x: 540px -->
+              <source media="(max-width: 1023px)" srcset="img/roger-goh-tablet@1x.jpg, img/roger-goh-tablet@2x.jpg 2x">
+              <!-- 1x: 342px; 2x: 684px -->
+              <img width="342" height="513" src="img/roger-goh-desktop@1x.jpg" srcset="img/roger-goh-desktop@2x.jpg 2x" alt="Детский розовый велосипед" loading="lazy">
+            </picture>
           </div>
           <p>Детский велосипед</p>
         </li>
