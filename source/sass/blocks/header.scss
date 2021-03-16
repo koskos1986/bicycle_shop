@@ -7,12 +7,36 @@
   }
 }
 
+.header--close {
+  @include tablet {
+    display: none;
+  }
+}
+
+.header--close .header--nojs {
+  @include tablet {
+    display: block;
+  }
+}
+
+.header--open {
+  @include tablet {
+    display: block;
+  }
+}
+
 .header__button {
   display: none;
 
   @include tablet {
+    @include btn-reset;
+
     position: absolute;
     top: 0;
     right: 0;
+    width: 50px;
+    height: 52px;
+    background-image: url("../img/icon-btn-menu-close.svg");
+    background-repeat: no-repeat;
   }
 }

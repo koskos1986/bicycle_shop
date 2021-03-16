@@ -1,7 +1,6 @@
 .about-us {
   display: flex;
   flex-direction: column;
-
   padding-top: 150px;
   padding-right: 137px;
   padding-bottom: 148px;
@@ -24,6 +23,7 @@
 
 .about-us h2 {
   @include style-reset;
+
   margin-bottom: 50px;
   font-size: 30px;
   font-weight: $semi-bold;
@@ -45,8 +45,11 @@
 
 .about-us__list {
   @include list-reset;
+
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
 
   @include tablet {
     flex-wrap: wrap;
@@ -85,6 +88,7 @@
 
 .about-us__item p {
   @include style-reset;
+
   width: 263px;
   font-size: 22px;
   font-weight: $regular;

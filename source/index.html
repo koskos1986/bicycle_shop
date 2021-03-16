@@ -14,6 +14,32 @@
   <link rel="preload" href="fonts/open_sans-regular.woff2" as="font">
   <link rel="preload" href="fonts/open_sans-semibold.woff" as="font">
   <link rel="preload" href="fonts/open_sans-semibold.woff2" as="font">
+
+  <!-- Pixel glass
+    <style>
+  HTML {
+    background-repeat: no-repeat;
+    background-position:  50% 0;
+    /* Mobile layout by default */
+    background-image: url("img/320.png");
+  }
+  /* Tablet */
+  @media ( min-width: 768px ) {
+    HTML {
+      /* Tablet layout */
+      background-image: url("img/768.png");
+    }
+  }
+  /* Desktop */
+  @media ( min-width: 1440px ) {
+    HTML {
+      /* Desktop layout */
+      background-image: url("img/1440.png");
+    }
+  }
+</style>
+  -->
+
 </head>
 
 <body class="page">
@@ -47,18 +73,18 @@
               <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
             </svg>
           </a>
-          <button class="lead__btn" type="button"></button>
+          <button class="lead__btn lead__btn--open" type="button"></button>
         </div>
         <h2>Мы продаем велосипеды</h2>
         <p>Наш магазин отбирает только самые лучшие велосипеды для продажи</p>
       </section>
       <form class="form" action="https://echo.htmlacademy.ru" method="POST">
         <p>Заполните поля ниже и мы подберем велосипед Вашей мечты</p>
-        <label class="form__label" for="">
-          <input type="text" placeholder="Введите Ваше Имя" required>
+        <label class="form__label" for="name" aria-label="Введите Ваше Имя">
+          <input type="text" id="name" placeholder="Введите Ваше Имя" required>
         </label>
-        <label class="form__label" for="">
-          <input type="tel" placeholder="Введите Ваш номер телефона" required>
+        <label class="form__label" for="phone" aria-label="Введите Ваш номер телефона">
+          <input type="tel" id="phone" placeholder="Введите Ваш номер телефона" pattern="(\+?\d[- .]*){7,13}" required>
         </label>
         <button class="form__btn" type="submit">Подобрать велосипед мечты</button>
       </form>
@@ -138,14 +164,28 @@
       <h2>Видео про велосипеды</h2>
       <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
       <div class="video__wrapper">
-        <button class="video__btn"></button>
+        <picture>
+          <!-- 1x: 288px; 2x: 576px -->
+          <source media="(max-width: 767px)" type="image/webp" srcset="img/josh-nuttall-mobile@1x.webp, img/josh-nuttall-mobile@2x.webp 2x">
+          <!-- 1x: 503px; 2x: 1006px -->
+          <source media="(max-width: 1023px)" type="image/webp" srcset="img/josh-nuttall-tablet@1x.webp, img/josh-nuttall-tablet@2x.webp 2x">
+          <!-- 1x: 929px; 2x: 1858px -->
+          <source type="image/webp" srcset="img/josh-nuttall-video-desktop@1x.webp, img/josh-nuttall-video-desktop@2x.webp 2x">
+          <!-- 1x: 288px; 2x: 576px -->
+          <source media="(max-width: 767px)" srcset="img/josh-nuttall-mobile@1x.jpg, img/josh-nuttall-mobile@2x.jpg 2x">
+          <!-- 1x: 503px; 2x: 1006px -->
+          <source media="(max-width: 1023px)" srcset="img/josh-nuttall-tablet@1x.jpg, img/josh-nuttall-tablet@2x.jpg 2x">
+          <!-- 1x: 929px; 2x: 1858px -->
+          <img width="929" height="522" src="img/josh-nuttall-video-desktop@1x.jpg" srcset="img/josh-nuttall-video-desktop@2x.jpg 2x" alt="Обложка для промо-видео о магазине велосипедов" loading="lazy">
+        </picture>
+        <button class="video__btn" type="button" aria-label="Включить видео"></button>
       </div>
     </section>
     <section class="destination">
       <h2>Как нас найти?</h2>
       <p>Мы находимся по адресу: Санкт-Петербург, ул. Большая Конюшенная, д. 19</p>
       <div class="destination__map-wrapper">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651625!2d30.32089461635926!3d59.93879418187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1615736475593!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" frameborder="0"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651625!2d30.32089461635926!3d59.93879418187619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1615736475593!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
       </div>
     </section>
   </main>
@@ -157,6 +197,6 @@
       <a href="+7(499)-784-684-46" class="footer__phone">+7 (499) -784-684-46</a>
     </section>
   </footer>
-  <script src=""></script>
+  <script src="js/script.js"></script>
 </body>
 </html>

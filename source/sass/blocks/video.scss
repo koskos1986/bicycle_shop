@@ -1,0 +1,90 @@
+.video {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 120px;
+  padding-right: 256px;
+  padding-bottom: 98px;
+  padding-left: 256px;
+  background-color: $background-black;
+
+  @include tablet {
+    padding-top: 70px;
+    padding-right: 132px;
+    padding-bottom: 85px;
+    padding-left: 132px;
+  }
+
+  @include mobile {
+    padding-top: 84px;
+    padding-right: $padding-mobile;
+    padding-bottom: 49px;
+    padding-left: $padding-mobile;
+  }
+}
+
+.video h2 {
+  @include style-reset;
+
+  margin-right: 8px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: $semi-bold;
+  line-height: 30px;
+  letter-spacing: -0.005em;
+  text-align: left;
+  color: $color-white;
+
+  @include tablet {
+    font-size: 24px;
+    font-weight: $semi-bold;
+  }
+}
+
+.video p {
+  @include style-reset;
+
+  width: 35%;
+  margin-bottom: 56px;
+  font-size: 16px;
+  font-weight: $light;
+  line-height: 28px;
+  letter-spacing: -0.005em;
+  text-align: center;
+  color: $color-white-07;
+
+  @include tablet {
+    width: 85%;
+    margin-bottom: 40px;
+  }
+
+  @include mobile {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+.video__wrapper {
+  position: relative;
+}
+
+.video__btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 65px;
+  height: 65px;
+  background-image: url("../img/icon-btn-play.svg");
+  background-repeat: no-repeat;
+
+  @include tablet {
+    width: 91px;
+    height: 91px;
+  }
+
+  @include mobile {
+    width: 65px;
+    height: 65px;
+  }
+}
