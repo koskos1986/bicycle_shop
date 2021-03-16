@@ -7,14 +7,14 @@
   padding-left: 137px;
 
   @include tablet {
-    padding-top: 70px;
+    padding-top: 27px;
     padding-right: 106px;
     padding-bottom: 30px;
     padding-left: 106px;
   }
 
   @include mobile {
-    padding-top: 70px;
+    padding-top: 34px;
     padding-right: 15px;
     padding-bottom: 35px;
     padding-left: 15px;
@@ -33,6 +33,7 @@
   color: $secondary-black;
 
   @include tablet {
+    margin-bottom: 29px;
     font-size: 24px;
     line-height: 41px;
   }
@@ -65,25 +66,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 263px;
+  width: 22%;
 
   @include tablet {
     margin-bottom: 40px;
+    width: 45.2%;
   }
 
   @include mobile {
-    margin-bottom: 35px;
+    margin-bottom: 39px;
   }
 }
 
 .about-us__item span {
-  margin-bottom: 37px;
+  margin-bottom: 13px;
   font-size: 28px;
   font-weight: $bold;
   line-height: 38px;
   letter-spacing: -1.2727270126342773px;
   text-align: center;
   color: $primary-green;
+
+  @include tablet {
+    margin-bottom: 16px;
+  }
+
+  @include mobile {
+    margin-bottom: 13px;
+  }
 }
 
 .about-us__item p {
@@ -96,4 +106,12 @@
   letter-spacing: -0.5px;
   text-align: center;
   color: $primary-black;
+
+  @include mobile {
+    font-size: $font-size;
+    font-weight: $regular;
+    line-height: $line-height;
+    letter-spacing: -0.5px;
+    text-align: center;
+  }
 }

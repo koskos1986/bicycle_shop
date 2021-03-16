@@ -7,7 +7,7 @@
   @include tablet {
     width: 100%;
     padding-top: 100px;
-    padding-bottom: 138px;
+    padding-bottom: 108px;
   }
 }
 
@@ -28,6 +28,13 @@
     margin-right: 0;
     margin-left: 0;
     margin-bottom: 30px;
+  }
+}
+
+.nav__item {
+  @include tablet {
+    position: relative;
+    padding-bottom: 30px;
 
     &::after {
       content: "";
@@ -35,8 +42,8 @@
       display: block;
       width: 25px;
       height: 25px;
-      top: 17px;
-      right: 18px;
+      top: 25px;
+      right: 16px;
       background-image: url("../img/icon-right-arrow.svg");
       background-repeat: no-repeat;
     }
@@ -57,8 +64,11 @@
 
   @include tablet {
     width: 100%;
+    padding-top: 17px;
     padding-right: $padding-mobile;
+    padding-bottom: 17px;
     padding-left: $padding-mobile;
+    line-height: 28px;
     text-align: left;
     color: $color-link-mobile;
     background-color: $color-gray-link-menu;

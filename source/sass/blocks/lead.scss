@@ -34,7 +34,7 @@
   padding-left: 21px;
 }
 
-.lead h2 {
+.lead h1 {
   @include style-reset;
 
   margin-bottom: 24px;
@@ -70,6 +70,9 @@
   opacity: 0.8;
 
   @include tablet {
+    max-width: 435px;
+    padding-right: 22px;
+    padding-left: 22px;
     margin-right: auto;
     margin-bottom: 80px;
     margin-left: auto;
@@ -80,6 +83,8 @@
 
   @include mobile {
     @include padding-mobile;
+
+    width: 100%;
   }
 }
 
