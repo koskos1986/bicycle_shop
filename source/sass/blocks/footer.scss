@@ -1,8 +1,12 @@
 .footer__contacts {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 39.3%;
   padding-top: 18px;
+  padding-right: 18px;
+  padding-left: 41px;
+
   margin-bottom: 98px;
   margin-left: auto;
   margin-right: auto;
@@ -20,10 +24,20 @@
   }
 }
 
+.footer__contacts a{
+  &:hover,
+  &:focus {
+    color: $color-link-mobile;
+  }
+
+  &:active {
+    color: $primary-green;
+  }
+}
+
 .footer__email {
   position: relative;
   display: block;
-  padding-right: 105px;
   font-size: 16px;
   font-weight: $regular;
   line-height: 22px;
@@ -42,7 +56,6 @@
 
   @include mobile {
     margin-bottom: 22px;
-    padding-right: 22px;
   }
 }
 
@@ -57,7 +70,7 @@
   &::before {
     position: absolute;
     top: 0;
-    left: -13px;
+    left: -37px;
     content: "";
     width: 22px;
     height: 23px;

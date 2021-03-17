@@ -42,3 +42,16 @@ body {
   font-family: "Open Sans", "Arial", sans-serif;
   color: $primary-black;
 }
+
+.btn {
+  background-color: $primary-green;
+
+  &:hover,
+  &:focus {
+    border-color: $primary-green-hover;
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

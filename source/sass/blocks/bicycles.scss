@@ -22,7 +22,7 @@
 .bicycles h2 {
   @include style-reset;
 
-  margin-bottom: 61px;
+  margin-bottom: 50px;
   font-size: 30px;
   font-weight: $semi-bold;
   line-height: 30px;
@@ -54,8 +54,17 @@
     margin-right: 0;
   }
 
+  &--touristic {
+    padding-top: 10px;
+
+    @include tablet {
+      padding-top: 0;
+      margin-right: 0;
+    }
+  }
+
   &--mountain {
-    padding-top: 29px;
+    padding-top: 39px;
 
     @include tablet {
       padding-top: 0;
@@ -86,7 +95,7 @@
 
 .bicycles__photo-wrapper {
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
   z-index: 1;
 }
 
@@ -96,8 +105,8 @@
     position: absolute;
     width: 180px;
     height: 180px;
-    top: 156px;
-    left: -60px;
+    top: 155px;
+    left: -52px;
     z-index: -1;
 
     border: 27px solid $primary-green;
@@ -124,8 +133,8 @@
     position: absolute;
     width: 47px;
     height: 47px;
-    left: -19px;
-    top: -18px;
+    left: -17px;
+    top: -17px;
     border: 8px solid $primary-green;
     box-sizing: border-box;
 
@@ -139,8 +148,8 @@
     position: absolute;
     width: 47px;
     height: 47px;
-    right: -23px;
-    bottom: -11px;
+    right: -21px;
+    bottom: -12px;
     border: 8px solid $primary-green;
     box-sizing: border-box;
 
@@ -156,7 +165,7 @@
     position: absolute;
     width: 95px;
     height: 95px;
-    right: -36px;
+    right: -28px;
     top: -32px;
     border: 17px solid $primary-green;
     box-sizing: border-box;

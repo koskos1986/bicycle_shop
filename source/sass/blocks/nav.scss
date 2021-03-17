@@ -62,6 +62,24 @@
   color: $color-white;
   opacity: 0.7;
 
+  &:hover,
+  &:focus {
+    opacity: 1;
+
+    @include tablet {
+      color: $primary-black;
+    }
+  }
+
+  &:active {
+    color: $primary-green;
+    opacity: 1;
+
+    @include tablet {
+      background-color: transparent;
+    }
+  }
+
   @include tablet {
     width: 100%;
     padding-top: 17px;

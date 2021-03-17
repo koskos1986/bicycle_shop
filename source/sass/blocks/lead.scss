@@ -1,9 +1,16 @@
 .lead {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  min-width: 245px;
+  margin-right: auto;
   text-align: left;
 
   @include tablet {
+    width: 100%;
+    min-height: 340px;
     margin-top: 0;
-    background-image: url("../img/bg-main-tablet@1x.jpg");
+    background-image: url("../img/bg-main-tablet@1x.jpg"), linear-gradient(to bottom, $primary-black, $color-link-mobile);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -12,35 +19,50 @@
       background-image: url("../img/bg-main-tablet@2x.jpg");
     }
   }
+
+  @include mobile {
+    padding-bottom: 70px;
+    background-image: url("../img/bg-main-mobile@1x.jpg"), linear-gradient(to bottom, $primary-black, $color-link-mobile);
+
+    @include retina {
+      background-image: url("../img/bg-main-mobile@2x.jpg");
+    }
+  }
 }
 
 .lead__wrapper {
-  margin-bottom: 28px;
+  margin-bottom: 17px;
 
   @include tablet {
     display: flex;
-    margin-bottom: 84px;
+    margin-bottom: 51px;
   }
 
   @include mobile {
-    margin-bottom: 70px;
+    margin-bottom: 36px;
   }
 }
 
 .lead__logo {
-  padding-top: 25px;
-  padding-right: 10px;
-  padding-bottom: 5px;
-  padding-left: 21px;
+  @include tablet {
+    padding-top: 21px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 21px;
+  }
+
+  @include mobile {
+    padding-left: 17px;
+  }
 }
 
 .lead h1 {
   @include style-reset;
 
   margin-bottom: 24px;
-  font-size: 46px;
+  font-size: 3.2vw;
   font-weight: $bold;
-  line-height: 64px;
+  line-height: 139%;
   color: $color-white;
   letter-spacing: -0.005em;
 
@@ -48,23 +70,25 @@
     margin-right: auto;
     margin-bottom: 20px;
     margin-left: auto;
-    font-size: 30px;
-    line-height: 42px;
+    font-size: 3.9vw;
+    line-height: 140%;
     text-align: center;
   }
 
   @include mobile {
     @include padding-mobile;
+
+    font-size: 30px;
+    line-height: 42px;
   }
 }
 
 .lead p {
   @include style-reset;
 
-  width: 381px;
-  font-size: 20px;
+  font-size: 1.39vw;
   font-weight: $light;
-  line-height: 32px;
+  line-height: 160%;
   letter-spacing: -0.005em;
   color: $color-white;
   opacity: 0.8;
@@ -76,8 +100,8 @@
     margin-right: auto;
     margin-bottom: 80px;
     margin-left: auto;
-    font-size: $font-size;
-    line-height: 32px;
+    font-size: 2.34vw;
+    line-height: 180%;
     text-align: center;
   }
 
@@ -85,6 +109,9 @@
     @include padding-mobile;
 
     width: 100%;
+    font-size: 18px;
+    line-height: 32px;
+    margin-bottom: 0;
   }
 }
 
