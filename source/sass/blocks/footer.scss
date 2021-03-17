@@ -3,9 +3,9 @@
   justify-content: space-between;
   flex-wrap: wrap;
   width: 39.3%;
-  padding-top: 18px;
-  padding-right: 18px;
-  padding-left: 41px;
+  padding-top: 20px;
+  padding-right: 16px;
+  padding-left: 40px;
 
   margin-bottom: 98px;
   margin-left: auto;
@@ -14,17 +14,21 @@
   @include tablet {
     width: 73%;
     padding-top: 12px;
+    padding-right: 13px;
+    padding-left: 44px;
     margin-bottom: 53px;
   }
 
   @include mobile {
+    width: 87%;
     flex-direction: column;
-    align-items: flex-end;
+    padding-top: 20px;
+    padding-right: 0;
     margin-bottom: 51px;
   }
 }
 
-.footer__contacts a{
+.footer__contacts a {
   &:hover,
   &:focus {
     color: $color-link-mobile;
@@ -46,7 +50,7 @@
   &::before {
     position: absolute;
     top: 3px;
-    left: -40px;
+    left: -42px;
     content: "";
     width: 26px;
     height: 20px;
@@ -55,7 +59,7 @@
   }
 
   @include mobile {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
   }
 }
 
@@ -64,20 +68,28 @@
   display: block;
   font-size: 16px;
   font-weight: $regular;
-  line-height: 32px;
+  line-height: 22px;
   color: $color-gray-link;
 
   &::before {
     position: absolute;
     top: 0;
-    left: -37px;
+    left: -34px;
     content: "";
     width: 22px;
     height: 23px;
     background-image: url("../img/icon-phone.svg");
+
+    @include tablet {
+      top: -2px;
+    }
+
+    @include mobile {
+      left: -11px;
+    }
   }
 
   @include mobile {
-    padding-right: 61px;
+    padding-left: 25px;
   }
 }

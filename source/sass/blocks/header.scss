@@ -19,16 +19,30 @@
   }
 }
 
+.header--nojs > .header__button,
+.header--nojs ~ .lead__btn--open {
+  display: none;
+}
+
 .header--open {
   @include tablet {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: block;
+    height: 100%;
+    width: 100%;
+    background-color: $color-white;
+    z-index: 2;
   }
 }
 
+.header--open + main,
+.header--open + footer {
+  display: none;
+}
+
 .header__button {
-  // &--close {
-  // display: none;
-  // }
   display: none;
 
   @include tablet {
@@ -44,9 +58,5 @@
     background-repeat: no-repeat;
     background-position: center;
     background-color: $color-white;
-
-    // &--open {
-    // display: block;
-    // }
   }
 }

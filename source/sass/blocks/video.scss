@@ -6,20 +6,23 @@
   max-height: 706px;
   padding-top: 124px;
   padding-right: 256px;
+  padding-bottom: 97px;
   padding-left: 256px;
   background-color: $background-black;
 
   @include tablet {
     max-height: 413px;
-    padding-top: 70px;
+    padding-top: 74px;
     padding-right: 132px;
+    padding-bottom: 45px;
     padding-left: 132px;
   }
 
   @include mobile {
     max-height: 384px;
-    padding-top: 84px;
+    padding-top: 93px;
     padding-right: $padding-mobile;
+    padding-bottom: 40px;
     padding-left: $padding-mobile;
   }
 }
@@ -29,14 +32,15 @@
 
   margin-right: 8px;
   margin-bottom: 20px;
-  font-size: 30px;
+  font-size: 2.08vw;
   font-weight: $semi-bold;
-  line-height: 30px;
+  line-height: 100%;
   letter-spacing: -0.005em;
   text-align: left;
   color: $color-white;
 
   @include tablet {
+    margin-bottom: 23px;
     font-size: 24px;
     font-weight: $semi-bold;
   }
@@ -55,7 +59,7 @@
   color: $color-white-07;
 
   @include tablet {
-    width: 85%;
+    width: 87%;
     margin-bottom: 40px;
   }
 
@@ -67,6 +71,14 @@
 
 .video__wrapper {
   position: relative;
+}
+
+.video__wrapper img {
+  width: 65.4vw;
+
+  @include mobile {
+    width: 90vw;
+  }
 }
 
 .video__btn {

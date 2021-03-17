@@ -13,6 +13,7 @@
   }
 
   @include mobile {
+    padding-top: 60px;
     padding-right: 25px;
     padding-bottom: 10px;
     padding-left: 25px;
@@ -22,7 +23,7 @@
 .bicycles h2 {
   @include style-reset;
 
-  margin-bottom: 50px;
+  margin-bottom: 52px;
   font-size: 30px;
   font-weight: $semi-bold;
   line-height: 30px;
@@ -47,6 +48,9 @@
 }
 
 .bicycles__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 30.3%;
   margin-right: 4.5%;
 
@@ -73,8 +77,17 @@
   }
 
   @include tablet {
-    width: 45.3%;
+    width: 45.8%;
+    margin-right: 8.4%;
     margin-bottom: 50px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   @include mobile {
@@ -97,6 +110,10 @@
   position: relative;
   margin-bottom: 9px;
   z-index: 1;
+
+  @include mobile {
+    margin-bottom: 11px;
+  }
 }
 
 .bicycles__photo-wrapper--touristic {
@@ -105,8 +122,8 @@
     position: absolute;
     width: 180px;
     height: 180px;
-    top: 155px;
-    left: -52px;
+    top: 156px;
+    left: -60px;
     z-index: -1;
 
     border: 27px solid $primary-green;
@@ -133,8 +150,8 @@
     position: absolute;
     width: 47px;
     height: 47px;
-    left: -17px;
-    top: -17px;
+    left: -18px;
+    top: -18px;
     border: 8px solid $primary-green;
     box-sizing: border-box;
 
@@ -148,7 +165,7 @@
     position: absolute;
     width: 47px;
     height: 47px;
-    right: -21px;
+    right: -23px;
     bottom: -12px;
     border: 8px solid $primary-green;
     box-sizing: border-box;
@@ -165,8 +182,8 @@
     position: absolute;
     width: 95px;
     height: 95px;
-    right: -28px;
-    top: -32px;
+    right: -36px;
+    top: -34px;
     border: 17px solid $primary-green;
     box-sizing: border-box;
     border-radius: 50%;

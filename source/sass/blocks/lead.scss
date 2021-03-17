@@ -21,7 +21,7 @@
   }
 
   @include mobile {
-    padding-bottom: 70px;
+    padding-bottom: 94px;
     background-image: url("../img/bg-main-mobile@1x.jpg"), linear-gradient(to bottom, $primary-black, $color-link-mobile);
 
     @include retina {
@@ -35,7 +35,7 @@
 
   @include tablet {
     display: flex;
-    margin-bottom: 51px;
+    margin-bottom: 75px;
   }
 
   @include mobile {
@@ -95,8 +95,6 @@
 
   @include tablet {
     max-width: 435px;
-    padding-right: 22px;
-    padding-left: 22px;
     margin-right: auto;
     margin-bottom: 80px;
     margin-left: auto;
