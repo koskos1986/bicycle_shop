@@ -65,6 +65,7 @@
   &:hover,
   &:focus {
     opacity: 1;
+    transition: 1s;
 
     @include tablet {
       color: $primary-black;
