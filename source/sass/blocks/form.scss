@@ -23,7 +23,7 @@
   }
 }
 
-.form p {
+.form__text {
   @include style-reset;
 
   margin-bottom: 20px;
@@ -81,8 +81,8 @@
   }
 }
 
-.form__btn {
-  @include btn-reset;
+.form__button {
+  @include button-reset;
 
   width: 100%;
   height: 51px;

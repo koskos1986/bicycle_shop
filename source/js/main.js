@@ -3,7 +3,7 @@
   var header = document.querySelector('.header');
   var leadMenu = document.querySelector('.lead');
 
-  var openButton = leadMenu.querySelector('.lead__btn--open');
+  var openButton = leadMenu.querySelector('.lead__button--open');
   var closeButton = header.querySelector('.header__button--close');
 
   header.classList.remove('header--nojs');

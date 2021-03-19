@@ -20,22 +20,14 @@
   }
 }
 
-.bicycles h2 {
+.bicycles__heading {
   @include style-reset;
+  @include heading;
 
   margin-bottom: 52px;
-  font-size: 30px;
-  font-weight: $semi-bold;
-  line-height: 30px;
-  letter-spacing: -0.005em;
-  text-align: center;
-  color: $secondary-black;
 
   @include tablet {
     margin-bottom: 30px;
-    font-size: 24px;
-    font-weight: $semi-bold;
-    line-height: 41px;
   }
 }
 
@@ -202,7 +194,7 @@
   }
 }
 
-.bicycles p {
+.bicycles__text {
   @include style-reset;
   font-size: 22px;
   font-weight: $semi-bold;

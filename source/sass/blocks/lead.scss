@@ -56,7 +56,7 @@
   }
 }
 
-.lead h1 {
+.lead__heading {
   @include style-reset;
 
   margin-bottom: 24px;
@@ -83,7 +83,7 @@
   }
 }
 
-.lead p {
+.lead__text {
   @include style-reset;
 
   font-size: 1.39vw;
@@ -113,13 +113,13 @@
   }
 }
 
-.lead__btn {
-  @include btn-reset;
+.lead__button {
+  @include button-reset;
   display: none;
   width: 50px;
   height: 50px;
   background-color: $primary-green;
-  background-image: url("../img/icon-btn-menu.svg");
+  background-image: url("../img/icon-button-menu.svg");
   background-position: center;
   background-repeat: no-repeat;
 

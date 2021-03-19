@@ -1,47 +1,42 @@
 .destination {
-  padding-top: 253px;
+  padding-top: 60px;
   padding-right: 235px;
   padding-bottom: 20px;
   padding-left: 234px;
 
   @include tablet {
-    padding-top: 159px;
+    padding-top: 28px;
     padding-right: 35px;
     padding-bottom: 10px;
     padding-left: 35px;
   }
 
   @include mobile {
-    padding-top: 131px;
+    padding-top: 31px;
     padding-right: 0;
     padding-left: 0;
   }
 }
 
-.destination h2 {
+.destination__heading {
   @include style-reset;
+  @include heading;
 
   margin-bottom: 31px;
   font-size: 1.97vw;
-  font-weight: $semi-bold;
-  line-height: 100%;
-  letter-spacing: -0.005em;
-  text-align: center;
-  color: $primary-black;
 
   @include tablet {
     margin-bottom: 22px;
-    font-size: 24px;
+    font-size: 2.95vw;
   }
 
   @include mobile {
     margin-bottom: 25px;
     font-size: $font-size;
-    font-weight: $semi-bold;
   }
 }
 
-.destination p {
+.destination__text {
   @include style-reset;
 
   width: 50%;
@@ -73,7 +68,8 @@
 }
 
 .destination__map-wrapper {
-  width: 66.5vw;
+  // width: 66.5vw;
+  width: 100%;
   height: 36.85vw;
   background-size: cover;
   background-repeat: no-repeat;

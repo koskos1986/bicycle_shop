@@ -20,7 +20,7 @@
 }
 
 .header--nojs > .header__button,
-.header--nojs ~ .lead__btn--open {
+.header--nojs ~ .lead__button--open {
   display: none;
 }
 
@@ -46,7 +46,7 @@
   display: none;
 
   @include tablet {
-    @include btn-reset;
+    @include button-reset;
 
     display: block;
     position: absolute;
@@ -54,7 +54,7 @@
     right: 0;
     width: 50px;
     height: 52px;
-    background-image: url("../img/icon-btn-menu-close.svg");
+    background-image: url("../img/icon-button-menu-close.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-color: $color-white;
