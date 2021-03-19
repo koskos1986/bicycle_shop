@@ -4,7 +4,6 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  // max-height: 706px;
   padding-top: 124px;
   padding-right: 256px;
   padding-bottom: 97px;
@@ -12,16 +11,14 @@
   background: linear-gradient($background-black 78.4%, transparent 78.4%, transparent 100%);
 
   @include tablet {
-    // max-height: 413px;
-    padding-top: 74px;
+    padding-top: 71px;
     padding-right: 132px;
     padding-bottom: 45px;
     padding-left: 132px;
-    background: linear-gradient($background-black 76%, transparent 76%, transparent 100%)
+    background: linear-gradient($background-black 76%, transparent 76%, transparent 100%);
   }
 
   @include mobile {
-    // max-height: 384px;
     padding-top: 93px;
     padding-right: $padding-mobile;
     padding-bottom: 40px;
@@ -73,10 +70,12 @@
 
 .video__wrapper {
   position: relative;
+  line-height: 0;
 }
 
 .video__wrapper img {
   width: 65.4vw;
+  object-fit: cover;
 
   @include mobile {
     width: 90vw;
@@ -88,25 +87,28 @@
 
   position: absolute;
   top: 44%;
-  left: 47%;
+  left: 50%;
   width: 65px;
   height: 65px;
   border-radius: 50%;
-  background-image: url("../img/icon-button-play.svg");
+  transform: translateX(-50%) translateY(10%);
+  background-image: url("../img/icon-btn-play.svg");
   background-repeat: no-repeat;
+  background-position: 29px center;
 
   @include tablet {
     top: 34%;
-    left: 43%;
     width: 91px;
     height: 91px;
-    background-size: cover;
+    background-size: 18px 25px;
+    background-position-x: 40px;
   }
 
   @include mobile {
-    top: 29%;
-    left: 39%;
+    top: 30%;
     width: 65px;
     height: 65px;
+    background-size: 13px 18px;
+    background-position-x: 28px;
   }
 }

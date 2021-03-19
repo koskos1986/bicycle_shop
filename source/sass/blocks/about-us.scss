@@ -7,7 +7,7 @@
   padding-left: 137px;
 
   @include tablet {
-    padding-top: 28px;
+    padding-top: 35px;
     padding-right: 106px;
     padding-bottom: 30px;
     padding-left: 106px;
@@ -28,7 +28,7 @@
   margin-bottom: 50px;
 
   @include tablet {
-    margin-bottom: 29px;
+    margin-bottom: 33px;
   }
 
   @include mobile {
@@ -87,18 +87,21 @@
 
 .about-us__item span {
   margin-bottom: 14px;
-  font-size: 28px;
+  font-size: 1.9vw;
   font-weight: $bold;
-  line-height: 38px;
+  line-height: 136%;
   letter-spacing: -1.2727270126342773px;
   text-align: center;
   color: $primary-green;
 
   @include tablet {
     margin-bottom: 16px;
+    font-size: 3.66vw;
   }
 
   @include mobile {
+    font-size: 28px;
+    line-height: 37px;
     margin-bottom: 18 px;
   }
 }
@@ -106,7 +109,7 @@
 .about-us__text {
   @include style-reset;
 
-  width: 263px;
+  width: 100%;
   font-size: 1.53vw;
   font-weight: $regular;
   line-height: 155%;

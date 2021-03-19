@@ -15,6 +15,7 @@ const svgstore = require('gulp-svgstore');
 const posthtml = require('gulp-posthtml');
 const include = require('posthtml-include');
 const del = require('del');
+var smoothscrollPolyfill = require("smoothscroll-polyfill");
 
 gulp.task('css', function () {
   return gulp.src('source/sass/style.scss')

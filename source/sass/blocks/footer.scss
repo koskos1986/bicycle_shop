@@ -1,16 +1,16 @@
 .footer {
   display: flex;
   flex-direction: column;
-  padding-top: 20px;
+  padding-top: 12px;
   padding-bottom: 74px;
 
   @include tablet {
-    padding-top: 22px;
+    padding-top: 5px;
     padding-bottom: 31px;
   }
 
   @include mobile {
-    padding-top: 31px;
+    padding-top: 17px;
     padding-bottom: 29px;
   }
 }
@@ -47,6 +47,10 @@
       margin-right: 25px;
     }
   }
+
+  @include mobile {
+    margin-bottom: 12px;
+  }
 }
 
 .footer__link-wrapper svg {
@@ -54,14 +58,14 @@
 }
 
 .footer__link-wrapper--email svg {
-  top: 1px;
-  left: 1px;
+  top: 9px;
+  left: 0;
   fill: $primary-green;
 }
 
 .footer__link-wrapper--phone svg {
-  top: -3px;
-  left: 5px;
+  top: 4px;
+  left: 7px;
   stroke: $primary-green;
   fill: none;
 }
@@ -88,29 +92,3 @@
     color: $primary-green;
   }
 }
-
-/*.footer__email {
-  position: relative;
-  display: block;
-  font-size: 16px;
-  font-weight: $regular;
-  line-height: 22px;
-  color: $color-gray-link;
-
-  @include mobile {
-    margin-bottom: 24px;
-  }
-}
-
-.footer__phone {
-  position: relative;
-  display: block;
-  font-size: 16px;
-  font-weight: $regular;
-  line-height: 22px;
-  color: $color-gray-link;
-
-  @include mobile {
-    padding-left: 25px;
-  }
-} */
