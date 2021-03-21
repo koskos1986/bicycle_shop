@@ -24,6 +24,17 @@
   document.addEventListener('click', menuToggle);
 })();
 
+(function () {
+  const links = document.querySelectorAll('a[href^="#"]');
+for (let link of links) {
+	function handleButtonClick(event) {
+		event.preventDefault();
+		const id = link.getAttribute('href');
+		document.querySelector(id).scrollIntoView({block: 'center', behavior: 'smooth'});
+	}
+    link.addEventListener('click', handleButtonClick);
+};
+}());
 /* smoothscroll v0.4.4 - 2019 - Dustan Kasten, Jeremias Menichelli - MIT License */
 
 (function (global, factory) {
