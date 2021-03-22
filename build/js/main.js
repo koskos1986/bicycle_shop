@@ -37,14 +37,14 @@ for (let link of links) {
 }());
 
 (function () {
-  document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('click', () => {
 
-    const inputElement = document.querySelector('input[type=tel]'); // ищем наш единственный input
-    const maskOptions = { // создаем объект параметров
-      mask: '+{7}(000)000-00-00' // задаем единственный параметр mask
+    const inputElement = document.querySelector('input[type=tel]');
+    const maskOptions = {
+      mask: '+{7}(000)000-00-00'
     };
-    IMask(inputElement, maskOptions); // запускаем плагин с переданными параметрами
-
+    IMask(inputElement, maskOptions);
+  });
 })();
 
 (function (global, factory) {
@@ -5365,4 +5365,3 @@ for (let link of links) {
   }
 
 }());
-

@@ -35,7 +35,17 @@ for (let link of links) {
     link.addEventListener('click', handleButtonClick);
 };
 }());
-/* smoothscroll v0.4.4 - 2019 - Dustan Kasten, Jeremias Menichelli - MIT License */
+
+(function () {
+  document.addEventListener('click', () => {
+
+    const inputElement = document.querySelector('input[type=tel]');
+    const maskOptions = {
+      mask: '+{7}(000)000-00-00'
+    };
+    IMask(inputElement, maskOptions);
+  });
+})();
 
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
@@ -5355,4 +5365,3 @@ for (let link of links) {
   }
 
 }());
-
