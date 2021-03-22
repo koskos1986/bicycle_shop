@@ -35,7 +35,17 @@ for (let link of links) {
     link.addEventListener('click', handleButtonClick);
 };
 }());
-/* smoothscroll v0.4.4 - 2019 - Dustan Kasten, Jeremias Menichelli - MIT License */
+
+(function () {
+  document.addEventListener('DOMContentLoaded', () => {
+
+    const inputElement = document.querySelector('input[type=tel]'); // ищем наш единственный input
+    const maskOptions = { // создаем объект параметров
+      mask: '+{7}(000)000-00-00' // задаем единственный параметр mask
+    };
+    IMask(inputElement, maskOptions); // запускаем плагин с переданными параметрами
+
+})();
 
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports) :
