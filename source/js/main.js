@@ -37,12 +37,9 @@
 }());
 
 (function () {
-  document.addEventListener('DOMContentLoaded', () => {
-
-    const inputElement = document.querySelector('input[type=tel]');
-    const maskOptions = {
-      mask: '+{7}(000)000-00-00'
-    };
-    IMask(inputElement, maskOptions);
-  });
+  const inputElement = document.querySelector('input[type=tel]');
+  const maskOptions = {
+    mask: '+{7}(000)000-00-00'
+  };
+  IMask(inputElement, maskOptions);
 })();
