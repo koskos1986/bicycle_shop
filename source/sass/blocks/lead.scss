@@ -60,16 +60,21 @@
   @include style-reset;
 
   margin-bottom: 24px;
-  font-size: 3.2vw;
+  font-size: 46px;
+  line-height: 64px;
   font-weight: $bold;
-  line-height: 139%;
   color: $color-white;
   letter-spacing: -0.005em;
 
+  @include desktop {
+    font-size: 3.2vw;
+    line-height: 139%;
+  }
+
   @include tablet {
-    margin-right: auto;
+    @include margin-auto;
+
     margin-bottom: 20px;
-    margin-left: auto;
     font-size: 3.9vw;
     line-height: 140%;
     text-align: center;
@@ -86,18 +91,22 @@
 .lead__text {
   @include style-reset;
 
-  font-size: 1.39vw;
+  font-size: 20px;
+  line-height: 32px;
   font-weight: $light;
-  line-height: 160%;
   letter-spacing: -0.005em;
   color: $color-white;
   opacity: 0.8;
 
+  @include desktop {
+    font-size: 1.39vw;
+    line-height: 160%;
+  }
+
   @include tablet {
+    @include margin-auto;
     max-width: 435px;
-    margin-right: auto;
     margin-bottom: 80px;
-    margin-left: auto;
     font-size: 2.34vw;
     line-height: 180%;
     text-align: center;

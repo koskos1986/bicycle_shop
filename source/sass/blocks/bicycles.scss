@@ -1,9 +1,16 @@
 .bicycles {
+  background-color: $color-gray-bg;
+}
+
+.bicycles__container {
+  @include margin-auto;
+
+  max-width: $desktop-width;
+  width: 100%;
   padding-top: 152px;
   padding-right: 148px;
   padding-bottom: 147px;
   padding-left: 148px;
-  background-color: $color-gray-bg;
 
   @include tablet {
     padding-top: 54px;
@@ -26,8 +33,21 @@
 
   margin-bottom: 52px;
 
+  @include desktop {
+    font-size: 2.1vw;
+    line-height: 100%;
+  }
+
   @include tablet {
     margin-bottom: 30px;
+    font-size: 3.12vw;
+    line-height: 125%;
+  }
+
+  @include mobile {
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 41px;
   }
 }
 

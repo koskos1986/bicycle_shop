@@ -1,21 +1,34 @@
 .video {
+  background: linear-gradient($background-black 78.4%, transparent 78.4%, transparent 100%);
+
+  @include tablet {
+    background: linear-gradient($background-black 76%, transparent 76%, transparent 100%);
+  }
+
+  @include mobile {
+    background: linear-gradient($background-black 81.1%, transparent 81.1%, transparent 100%);
+  }
+}
+
+.video__container {
+  @include margin-auto;
+
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  max-width: $desktop-width;
   padding-top: 124px;
   padding-right: 256px;
   padding-bottom: 97px;
   padding-left: 256px;
-  background: linear-gradient($background-black 78.4%, transparent 78.4%, transparent 100%);
 
   @include tablet {
     padding-top: 71px;
     padding-right: 132px;
     padding-bottom: 45px;
     padding-left: 132px;
-    background: linear-gradient($background-black 76%, transparent 76%, transparent 100%);
   }
 
   @include mobile {
@@ -23,7 +36,6 @@
     padding-right: $padding-mobile;
     padding-bottom: 40px;
     padding-left: $padding-mobile;
-    background: linear-gradient($background-black 81.1%, transparent 81.1%, transparent 100%);
   }
 }
 
@@ -33,8 +45,12 @@
 
   margin-right: 8px;
   margin-bottom: 20px;
-  font-size: 2.08vw;
   color: $color-white;
+
+  @include desktop {
+    font-size: 2.08vw;
+    line-height: 100%;
+  }
 
   @include tablet {
     margin-bottom: 23px;
@@ -45,14 +61,20 @@
 .video__text {
   @include style-reset;
 
-  width: 37%;
+  width: 41%;
   margin-bottom: 56px;
-  font-size: 1.12vw;
+  font-size: 18px;
   font-weight: $light;
-  line-height: 175%;
+  line-height: 28px;
   letter-spacing: -0.005em;
   text-align: center;
   color: $color-white-07;
+
+  @include desktop {
+    width: 37%;
+    font-size: 1.12vw;
+    line-height: 175%;
+  }
 
   @include tablet {
     width: 87%;

@@ -1,10 +1,4 @@
 .main__wrapper {
-  display: flex;
-  justify-content: center;
-  padding-top: 318px;
-  padding-right: 19.4%;
-  padding-bottom: 208px;
-  padding-left: 19.4%;
   margin-top: -62px;
   background-image: url("../img/bg-main-desktop@1x.jpg"), linear-gradient(to bottom, $primary-black, $color-link-mobile);
   background-position: center;
@@ -18,7 +12,30 @@
   @include tablet {
     @include style-reset;
 
-    flex-direction: column;
     background-image: none;
+  }
+}
+
+.main__container {
+  @include margin-auto;
+
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: $desktop-width;
+  padding-top: 318px;
+  padding-right: 280px;
+  padding-bottom: 208px;
+  padding-left: 280px;
+
+  @include desktop {
+    padding-right: 19.4%;
+    padding-left: 19.4%;
+  }
+
+  @include tablet {
+    @include style-reset;
+
+    flex-direction: column;
   }
 }

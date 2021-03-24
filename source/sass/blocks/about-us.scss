@@ -1,6 +1,10 @@
-.about-us {
+.about-us__container {
+  @include margin-auto;
+
   display: flex;
   flex-direction: column;
+  max-width: $desktop-width;
+  width: 100%;
   padding-top: 151px;
   padding-right: 137px;
   padding-bottom: 107px;
@@ -27,12 +31,21 @@
 
   margin-bottom: 50px;
 
+  @include desktop {
+    font-size: 2.1vw;
+    line-height: 100%;
+  }
+
   @include tablet {
     margin-bottom: 33px;
+    font-size: 3.12vw;
+    line-height: 125%;
   }
 
   @include mobile {
     margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 41px;
   }
 }
 
@@ -87,12 +100,17 @@
 
 .about-us__item span {
   margin-bottom: 14px;
-  font-size: 1.9vw;
+  font-size: 28px;
   font-weight: $bold;
-  line-height: 136%;
+  line-height: 38px;
   letter-spacing: -1.2727270126342773px;
   text-align: center;
   color: $primary-green;
+
+  @include desktop {
+    font-size: 1.9vw;
+    line-height: 136%;
+  }
 
   @include tablet {
     margin-bottom: 16px;
@@ -110,12 +128,17 @@
   @include style-reset;
 
   width: 100%;
-  font-size: 1.53vw;
+  font-size: 22px;
   font-weight: $regular;
-  line-height: 155%;
+  line-height: 34px;
   letter-spacing: -0.5px;
   text-align: center;
   color: $primary-black;
+
+  @include desktop {
+    font-size: 1.53vw;
+    line-height: 155%;
+  }
 
   @include tablet {
     font-size: 2.84vw;

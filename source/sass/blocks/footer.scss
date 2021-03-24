@@ -1,40 +1,33 @@
-.footer {
+.footer__contacts {
+  @include margin-auto;
+
+  max-width: $desktop-width;
+  width: 100%;
   display: flex;
-  flex-direction: column;
   padding-top: 12px;
   padding-bottom: 74px;
+  padding-right: 444px;
+  padding-left: 438px;
 
-  @include tablet {
-    padding-top: 5px;
-    padding-bottom: 31px;
+  @include desktop {
+    padding-right: 30.8%;
+    padding-left: 30.4%;
   }
 
-  @include mobile {
+  @include tablet {
     padding-top: 17px;
     padding-bottom: 29px;
-  }
-}
-
-.footer__contacts {
-  width: 39.3%;
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: space-between;
-  padding-right: 18px;
-  margin-right: auto;
-  margin-left: auto;
-
-  @include tablet {
-    width: 73%;
-    padding-right: 12px;
+    padding-right: 105px;
+    padding-left: 105px;
   }
 
   @include mobile {
-    width: 87%;
     flex-direction: column;
     align-items: center;
-    padding-right: 0;
-    padding-left: 8px;
+    padding-top: 17px;
+    padding-bottom: 29px;
+    padding-right: 22px;
+    padding-left: 29px;
   }
 }
 
@@ -84,9 +77,13 @@
 }
 
 .footer__link {
-  font-size: 1.11vw;
+  font-size: 16px;
   color: $color-gray-link;
   padding-left: 42px;
+
+  @include desktop {
+    font-size: 1.11vw;
+  }
 
   @include tablet {
     font-size: 2.09vw;

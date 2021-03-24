@@ -1,7 +1,7 @@
 .nav {
+  @include margin-auto;
+
   width: 873.5px;
-  margin-right: auto;
-  margin-left: auto;
   border-bottom: 1px solid $color-white-02;
 
   @include tablet {
