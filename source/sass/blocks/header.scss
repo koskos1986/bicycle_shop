@@ -57,3 +57,7 @@
     background-color: $color-white;
   }
 }
+
+.header__button svg {
+  pointer-events: none;
+}
