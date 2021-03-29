@@ -19,8 +19,7 @@
   }
 }
 
-.header--nojs > .header__button,
-.header--nojs ~ .lead__button--open {
+.header--nojs > .header__button {
   display: none;
 }
 

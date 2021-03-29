@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Продаем оригинальные и крутые велосипеды">
   <title>Проект Акселератора - "Велосипеды"</title>
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/open-sans-bold.woff" as="font">
@@ -45,7 +46,7 @@
                 <use xlink:href="img/sprite-auto.svg#icon-logo"></use>
               </svg>
             </a>
-            <button class="lead__button lead__button--open button" type="button">
+            <button class="lead__button lead__button--open button lead__button--nojs" type="button">
               <svg width="30" height="30">
                 <use xlink:href="img/sprite-auto.svg#icon-btn-menu"></use>
               </svg>
@@ -61,7 +62,7 @@
               <input type="text" placeholder="Введите Ваше Имя" required>
             </label>
             <label aria-label="Введите Ваш номер телефона">
-              <input type="tel" placeholder="Введите Ваш номер телефона" required>
+              <input type="tel" placeholder="Введите Ваш номер телефона" minlength="16" maxlength="16" required>
             </label>
             <button class="form__button button" type="submit">Подобрать велосипед мечты</button>
           </form>

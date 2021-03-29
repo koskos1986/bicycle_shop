@@ -2,11 +2,13 @@
 (function () {
   const header = document.querySelector('.header');
   const leadMenu = document.querySelector('.lead');
+  const leadButton = document.querySelector('.lead__button')
 
   const openButton = leadMenu.querySelector('.lead__button--open');
   const closeButton = header.querySelector('.header__button--close');
 
   header.classList.remove('header--nojs');
+  leadButton.classList.remove('lead__button--nojs');
   header.classList.add('header--close');
 
   const menuToggle = function (evt) {

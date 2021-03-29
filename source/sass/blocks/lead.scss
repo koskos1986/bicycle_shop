@@ -135,6 +135,10 @@
   }
 }
 
+.lead__wrapper > .lead__button--nojs {
+  display: none;
+}
+
 .lead__button svg {
   pointer-events: none;
 }

@@ -76,7 +76,7 @@
   margin-bottom: 44px;
   margin-left: 0;
 
-  &:last-child {
+  &:nth-child(4n) {
     margin-right: 0;
   }
 
