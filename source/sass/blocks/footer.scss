@@ -4,7 +4,7 @@
   max-width: $desktop-width;
   width: 100%;
   display: flex;
-  padding-top: 12px;
+  padding-top: 10px;
   padding-bottom: 74px;
   padding-right: 444px;
   padding-left: 438px;
@@ -15,7 +15,7 @@
   }
 
   @include tablet {
-    padding-top: 6px;
+    padding-top: 8px;
     padding-bottom: 29px;
     padding-right: 105px;
     padding-left: 105px;

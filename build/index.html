@@ -9,6 +9,30 @@
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/open-sans-bold.woff" as="font">
   <link rel="preload" href="fonts/open-sans-bold.woff2" as="font">
+    <!-- Pixel glass-->
+  <style>
+    HTML {
+      background-repeat: no-repeat;
+      background-position:  50% 0;
+      /* Mobile layout by default */
+      background-image: url("img/320.png");
+    }
+    /* Tablet */
+    @media ( min-width: 768px ) {
+      HTML {
+        /* Tablet layout */
+        background-image: url("img/768.png");
+      }
+    }
+    /* Desktop */
+    @media ( min-width: 1440px ) {
+      HTML {
+        /* Desktop layout */
+        background-image: url("img/1440.png");
+      }
+    }
+  </style>
+
 </head>
 
 <body class="page">
@@ -41,11 +65,11 @@
       <div class="main__container">
         <section class="lead">
           <div class="lead__wrapper">
-            <a class="lead__logo">
+            <span class="lead__logo">
               <svg width="68" height="20">
                 <use xlink:href="img/sprite-auto.svg#icon-logo"></use>
               </svg>
-            </a>
+            </span>
             <button class="lead__button lead__button--open button lead__button--nojs" type="button">
               <svg width="30" height="30">
                 <use xlink:href="img/sprite-auto.svg#icon-btn-menu"></use>
