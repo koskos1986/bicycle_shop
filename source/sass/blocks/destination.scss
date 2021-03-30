@@ -3,7 +3,7 @@
 
   width: 100%;
   max-width: $desktop-width;
-  padding-top: 65px;
+  padding-top: 55px;
   padding-right: 235px;
   padding-bottom: 20px;
   padding-left: 234px;
@@ -16,7 +16,7 @@
   }
 
   @include mobile {
-    padding-top: 18px;
+    padding-top: 28px;
     padding-right: 0;
     padding-left: 0;
   }
@@ -33,7 +33,7 @@
   }
 
   @include tablet {
-    margin-bottom: 22px;
+    margin-bottom: 20px;
     font-size: 2.95vw;
   }
 

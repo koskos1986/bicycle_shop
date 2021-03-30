@@ -1,4 +1,5 @@
 .main__wrapper {
+  min-height: 824px;
   margin-top: -62px;
   background-image: url("../img/bg-main-desktop@1x.jpg"), linear-gradient(to bottom, $primary-black, $color-link-mobile);
   background-position: center;
@@ -12,6 +13,7 @@
   @include tablet {
     @include style-reset;
 
+    min-height: auto;
     background-image: none;
   }
 }

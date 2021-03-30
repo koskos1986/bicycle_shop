@@ -21,7 +21,7 @@
   }
 
   @include mobile {
-    padding-bottom: 94px;
+    padding-bottom: 69px;
     background-image: url("../img/bg-main-mobile@1x.jpg"), linear-gradient(to bottom, $primary-black, $color-link-mobile);
 
     @include retina {
@@ -39,7 +39,7 @@
   }
 
   @include mobile {
-    margin-bottom: 36px;
+    margin-bottom: 61px;
   }
 }
 
