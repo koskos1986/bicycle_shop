@@ -17,6 +17,7 @@
 
 .header--nojs {
   @include tablet {
+    position: relative;
     display: block;
   }
 }
